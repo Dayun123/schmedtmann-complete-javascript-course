@@ -1,0 +1,3 @@
+************ Lecture 6 *************
+
+There are two ways to insert JavaScript into a webpage, through inline scripts or through links to external scripts. Even though links to external scripts cause you to make another network download, they are definitely the preferred way for writing JavaScript and they are the method we will use in this course.
