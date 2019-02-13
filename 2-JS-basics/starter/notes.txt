@@ -34,3 +34,10 @@ You can assign to more than one variable at a time since the assignment operator
 **************************** Lecture 14 ***************************************
 
 If you need your code to make a decision based on a true/false (boolean) value, then you will need to employ conditional statements. The simplest is the if...else statement, which runs a block of code if a condition evaluates to true and another if it evaluates to false.
+
+**************************** Lecture 15 ***************************************
+
+You can use the &&, ||, and ! operators to create more complex boolean logic.
+
+
+
