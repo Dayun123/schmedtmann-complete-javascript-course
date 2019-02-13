@@ -117,7 +117,7 @@ console.log(typeof noVal);      // undefined
 */
 
 /******************** Operator Precedence ******************/
-
+/*
 var myName = 'Daniel Schroeder';
 var currentYear = 2019;
 var birthYear = 1985;
@@ -153,6 +153,47 @@ console.log(x); // 11
 x = 10;
 x--;
 console.log(x); // 9
+*/
+
+/******************** Coding Challenge ******************/
+
+/*
+
+Mark and John are trying to calculate their Body Mass Index (BMI) using the formula: 
+
+BMI = mass / height^2
+(mass in kg, height in meters)
+
+1. Store Mark and John's mass and height in variables
+2. Calculate both their BMI's
+3. Create a boolean variable which tells whether Mark's BMI is higher than John's.
+4. Print a string to the console containing the variable from step 3. (ex: "Is Mark's BMI higher than John's? true").
+
+*/
+
+var markMass, markHeight, markBMI;
+var johnMass, johnHeight, johnBMI;
+var isMarkBMIHigher;
+
+// calculate Mark's BMI
+markMass = 50;
+markHeight = 2;
+markBMI = markMass / (markHeight * markHeight);
+
+// calculate John's BMI
+johnMass = 45;
+johnHeight = 1.8;
+johnBMI = johnMass / (johnHeight * johnHeight);
+
+// figure our if Mark's BMI is higher than John's
+isMarkBMIHigher = markBMI > johnBMI;
+
+// display the results
+console.log('Mark\'s BMI is ' + markBMI + ' and John\'s BMI is ' + johnBMI + '.');
+console.log('Is Mark\'s BMI higher than John\'s? ' + isMarkBMIHigher);
+
+
+
 
 
 
