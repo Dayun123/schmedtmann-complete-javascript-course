@@ -1,3 +1,18 @@
-************ Lecture 6 *************
+********************************* Lecture 6 **********************************
 
 There are two ways to insert JavaScript into a webpage, through inline scripts or through links to external scripts. Even though links to external scripts cause you to make another network download, they are definitely the preferred way for writing JavaScript and they are the method we will use in this course.
+
+********************************** Lecture 8 *********************************
+
+Variables are used in every programming language, and they are a way to store a value for use throughout a program. We declare variables in JavaScript with the 'var' keyword. 
+
+JavaScript has 5 data primitive data types:
+  1. Number - always floating point
+  2. String
+  3. Boolean
+  4. Undefined - a variable that doesn't have a value yet
+  5. Null = 'non-existent'
+
+JavaScript is a dynamically typed language, which means that we don't have to define what type of value a variable will hold. In other languages, you need to define what data type a variable will hold before you can assign anything to it, these are known as statically typed languages. Variables can change what type of data type they hold throughout a program simply by being assigned to a new data type.
+
+Variables should have meaningful names, and be in camelCase notation. They should not start with a number or a symbol, unless it is the $ or _. You also cannot use reserved JavaScript keywords as variable names.
