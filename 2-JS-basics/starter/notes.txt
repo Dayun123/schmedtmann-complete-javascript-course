@@ -30,3 +30,7 @@ JavaScript has basic arithmetic operators like +, -, / and *. There are also the
 JavaScript operators don't execute in the order they appear, but instead follow the languages rules of operator precedence. Google it whenever you get hung up on why an expression isn't turning out like you expect, there is no way to memorize the whole list.
 
 You can assign to more than one variable at a time since the assignment operator has such a low precedence, and it evaluates right to left. There are also handy arithmetic assingment operators that allow you to perform an operation on a variable using the variable, then assign the result to the variable.
+
+**************************** Lecture 14 ***************************************
+
+If you need your code to make a decision based on a true/false (boolean) value, then you will need to employ conditional statements. The simplest is the if...else statement, which runs a block of code if a condition evaluates to true and another if it evaluates to false.

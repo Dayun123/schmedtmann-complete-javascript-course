@@ -170,6 +170,7 @@ BMI = mass / height^2
 4. Print a string to the console containing the variable from step 3. (ex: "Is Mark's BMI higher than John's? true").
 
 */
+/*
 
 var markMass, markHeight, markBMI;
 var johnMass, johnHeight, johnBMI;
@@ -192,13 +193,48 @@ isMarkBMIHigher = markBMI > johnBMI;
 console.log('Mark\'s BMI is ' + markBMI + ' and John\'s BMI is ' + johnBMI + '.');
 console.log('Is Mark\'s BMI higher than John\'s? ' + isMarkBMIHigher);
 
+*/
 
 
+/******************** Conditional statements: if-else ******************/
 
+var firstName = 'Daniel';
+var maritalStatus = 'single';
 
+// you can use conditional statements to test for certain true/false values and make a decision based on them.
+if (maritalStatus === 'married') {
+  console.log(firstName + ' is married.');
+} else {
+  console.log(firstName + ' is single.');
+}
 
+// with these, we can refactor our code from the previous coding challenge to use conditional logic.
 
+var markMass, markHeight, markBMI;
+var johnMass, johnHeight, johnBMI;
+var isMarkBMIHigher;
 
+// calculate Mark's BMI
+markMass = 50;
+markHeight = 2;
+markBMI = markMass / (markHeight * markHeight);
+
+// calculate John's BMI
+johnMass = 45;
+johnHeight = 1.8;
+johnBMI = johnMass / (johnHeight * johnHeight);
+
+// figure our if Mark's BMI is higher than John's
+isMarkBMIHigher = markBMI > johnBMI;
+
+console.log('Mark BMI: ' + markBMI);
+console.log('John BMI: ' + johnBMI);
+
+if (isMarkBMIHigher) {
+  console.log('Mark\'s BMI is higher than John\'s.');
+} else {
+  console.log('John\'s BMI is higher than Mark\'s.');
+}
 
 
 
