@@ -40,6 +40,7 @@ console.log($3years);
 
 /******************** Variable Mutation and Type Coercion ******************/
 
+/*
 var firstName = 'John';
 var age = 28;
 
@@ -71,6 +72,49 @@ alert('Hi there!');
 // also, if you want to prompt the user for some input, you can use the prompt() function and store the value returned in a variable.
 var lastName = prompt('What is your last name?');
 console.log('Your last name is ' + lastName);
+*/
+
+
+/******************** Basic Operators ******************/
+
+var currentYear, age, birthYear;
+
+currentYear = 2019;
+birthYear = 1985;
+// using '-' math operator to compute my age.
+age = currentYear - birthYear;
+
+console.log('I will be ' + age + ' years old on December 21st.');
+
+var weeksInYear, daysInWeek, daysInYear;
+
+daysInYear = 365;
+daysInWeek = 7;
+
+// division operator
+weeksInYear = daysInYear / 7;
+
+// notice that the output is a decimal. In JavaScript, all numbers are floats!
+console.log('There are ' + weeksInYear + ' weeks in a year.'); // output: There are 52.142857142857146 weeks in a year.
+
+// multiplication operator
+daysInYear = weeksInYear * daysInWeek;
+console.log('There are ' + daysInYear + ' days in a year.');
+
+// logical operators return boolean values
+console.log(5 > 7);
+console.log(3 < 5);
+
+var myBool = 4 > 2;
+
+// you can use the typeof operator to determine the type of a variable.
+console.log(typeof myBool);     // boolean
+console.log(typeof daysInYear); // number
+console.log(typeof 'hello');    // string
+var noVal;
+console.log(typeof noVal);      // undefined
+
+
 
 
 
