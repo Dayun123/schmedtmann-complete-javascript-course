@@ -16,3 +16,7 @@ JavaScript has 5 data primitive data types:
 JavaScript is a dynamically typed language, which means that we don't have to define what type of value a variable will hold. In other languages, you need to define what data type a variable will hold before you can assign anything to it, these are known as statically typed languages. Variables can change what type of data type they hold throughout a program simply by being assigned to a new data type.
 
 Variables should have meaningful names, and be in camelCase notation. They should not start with a number or a symbol, unless it is the $ or _. You also cannot use reserved JavaScript keywords as variable names.
+
+***************************** Lecture 9 **************************************
+
+In JavaScript, data types can become other data types in certain expressions. In expressions where you are basically concatenating variables with strings, any variables that are numbers, booleans, or even undefined will be converted to the string representation of themselves. Since JavaScript is dynamically typed, the value in the variable can change on the fly. You can also redefine a variable from one data type to the other.
