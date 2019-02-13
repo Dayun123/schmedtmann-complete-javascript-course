@@ -76,6 +76,7 @@ console.log('Your last name is ' + lastName);
 
 
 /******************** Basic Operators ******************/
+/*
 
 var currentYear, age, birthYear;
 
@@ -113,6 +114,52 @@ console.log(typeof daysInYear); // number
 console.log(typeof 'hello');    // string
 var noVal;
 console.log(typeof noVal);      // undefined
+*/
+
+/******************** Operator Precedence ******************/
+
+var myName = 'Daniel Schroeder';
+var currentYear = 2019;
+var birthYear = 1985;
+var legalDrinkingAge = 21;
+
+// the '-' is evaluated first, then the logical operator, so this works. Probably always a better idea to use () to be safe.
+var isLegal = currentYear - birthYear >= legalDrinkingAge;
+console.log('Is ' + myName + ' of legal drinking age? ' + isLegal);
+
+// will be wrong because the '/' will happen first, just like in regular math class.
+var average = 24 + 6 / 2; // result: 27 (not 15 like we would expect)
+console.log(average);
+
+average = (24 + 6) / 2;
+console.log(average); // result: 15
+
+// you can assign values to multiple variables at once.
+var x, y;
+
+x = y = (10 + 2) * 8 - 4;
+console.log(x, y); // 92 92
+
+// more operators
+x = 10;
+x = x * 2;
+console.log(x); // 20
+x = 10;
+x *= 2;
+console.log(x); // 20
+x = 10;
+x++
+console.log(x); // 11
+x = 10;
+x--;
+console.log(x); // 9
+
+
+
+
+
+
+
 
 
 

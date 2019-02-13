@@ -24,3 +24,9 @@ In JavaScript, data types can become other data types in certain expressions. In
 **************************** Lecture 10 ***************************************
 
 JavaScript has basic arithmetic operators like +, -, / and *. There are also the basic logical operators > and <, which return a boolean value. While the arithmetic and logical operators require more than one value, the typeof operator operates on a single value.
+
+**************************** Lecture 11 ***************************************
+
+JavaScript operators don't execute in the order they appear, but instead follow the languages rules of operator precedence. Google it whenever you get hung up on why an expression isn't turning out like you expect, there is no way to memorize the whole list.
+
+You can assign to more than one variable at a time since the assignment operator has such a low precedence, and it evaluates right to left. There are also handy arithmetic assingment operators that allow you to perform an operation on a variable using the variable, then assign the result to the variable.
