@@ -327,7 +327,7 @@ switch(true) {
 */
 
 /*******************Truth and Falsy Values, Equality *************************/
-
+/*
 var height;
 
 // since height has not beed defined, it is a falsy value.
@@ -354,10 +354,100 @@ height = 23;
 if (height == '23') {
   console.log('The == operator converted the string to a number to do the comparison.');
 }
+*/
+
+/******************* Coding Challenge 2 *************************/
+
+/*
+
+John and Mike both play basketball on different teams. The last three games, the scores for each team were as follows:
+
+John's Team: 89, 120, 103
+Mike's Team: 116, 94, 123
+
+1. Calculate the average score for each team.
+2. Dedide which team has the highest average and print to the console. Also, include the average score in the output.
+3. Change the scores to flip the winner, there could be a draw.
+
+4. EXTRA: Mary also plays basketball. The last three games, her team scored:
+
+Mary's Team: 97, 135, 105
+
+- Like before, log the team with the highest average to the console. 
+- Like before, change the scores to get a diffent winner, there could be a draw.
+
+*/
+
+var avgJohnTeam = (89 + 120 + 103) / 3;
+var avgMikeTeam = (116 + 94 + 123) / 3;
+console.log('avgJohnTeam: ' + avgJohnTeam);
+console.log('avgMikeTeam: ' + avgMikeTeam);
+
+// account for a draw...
+if (avgJohnTeam === avgMikeTeam) {
+  console.log('Both teams have the same average!');
+} else if (avgJohnTeam > avgMikeTeam) {
+  console.log('John\'s team has the higher average score with: ' + avgJohnTeam);
+} else {
+  console.log('Mike\'s team has the higher average score with: ' + avgMikeTeam);
+}
+
+// flip the scores
+var temp = avgJohnTeam;
+avgJohnTeam = avgMikeTeam;
+avgMikeTeam = temp;
+console.log('avgJohnTeam: ' + avgJohnTeam);
+console.log('avgMikeTeam: ' + avgMikeTeam);
+
+// account for a draw...
+if (avgJohnTeam === avgMikeTeam) {
+  console.log('Both teams have the same average!');
+} else if (avgJohnTeam > avgMikeTeam) {
+  console.log('John\'s team has the higher average score with: ' + avgJohnTeam);
+} else {
+  console.log('Mike\'s team has the higher average score with: ' + avgMikeTeam);
+}
+
+var avgMaryTeam = (97 + 135 + 105) / 3; 
+
+console.log('avgJohnTeam: ' + avgJohnTeam);
+console.log('avgMikeTeam: ' + avgMikeTeam);
+console.log('avgMaryTeam: ' + avgMaryTeam);
 
 
+// account for a draw...
+if (avgMaryTeam === avgMikeTeam === avgJohnTeam) {
+  console.log('All three teams have the same average!');
+} else if (avgMaryTeam > avgMikeTeam && avgMaryTeam > avgJohnTeam) {
+  console.log('Mary\'s team has the higher average score with ' + avgMaryTeam);
+} else if (avgJohnTeam > avgMaryTeam && avgJohnTeam > avgMikeTeam) {
+  console.log('John\'s team has the higher average score with ' + avgJohnTeam);
+} else {
+  console.log('Mike\'s team has the higher average score with ' + avgMikeTeam);
+}
+
+// flip the scores
+var origMary = avgMaryTeam;
+var origMike = avgMikeTeam;
+avgMaryTeam = avgJohnTeam;
+avgMikeTeam = origMary;
+avgJohnTeam = origMike;
+
+console.log('avgJohnTeam: ' + avgJohnTeam);
+console.log('avgMikeTeam: ' + avgMikeTeam);
+console.log('avgMaryTeam: ' + avgMaryTeam);
 
 
+// account for a draw..
+if (avgMaryTeam === avgMikeTeam === avgJohnTeam) {
+  console.log('All three teams have the same average!');
+} else if (avgMaryTeam > avgMikeTeam && avgMaryTeam > avgJohnTeam) {
+  console.log('Mary\'s team has the higher average score with ' + avgMaryTeam);
+} else if (avgJohnTeam > avgMaryTeam && avgJohnTeam > avgMikeTeam) {
+  console.log('John\'s team has the higher average score with ' + avgJohnTeam);
+} else {
+  console.log('Mike\'s team has the higher average score with ' + avgMikeTeam);
+}
 
 
 
