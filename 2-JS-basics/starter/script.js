@@ -256,6 +256,7 @@ if (johnAge < 13) {
 
 /****************** Ternery Operator and Switch Statements ******************/
 
+/*
 var firstName = 'Daniel';
 var age = 33;
 
@@ -287,6 +288,7 @@ switch(job) {
   default: 
     console.log(firstName + ' does something else.');
 }
+*/
 
 // can translate this into a switch statement
 /*
@@ -304,6 +306,7 @@ if (johnAge < 13) {
 }
 */
 
+/*
 var firstName = 'John';
 var johnAge = 16;
 
@@ -321,6 +324,43 @@ switch(true) {
   default:
     console.log(firstName + ' is a man.');    
 }
+*/
+
+/*******************Truth and Falsy Values, Equality *************************/
+
+var height;
+
+// since height has not beed defined, it is a falsy value.
+if (height) {
+  console.log('The variable has been defined.');
+} else {
+  console.log('The variable has NOT been defined');
+}
+
+// what if we define height to 0? This is falsy, so we need to add a logical operator to account for this.
+height = 0;
+
+if (height || height === 0) {
+  console.log('The variable has been defined.');
+} else {
+  console.log('The variable has NOT been defined.');
+}
+
+// we usually use the === (strict equality operator), but there is another equality operator, ==, which performs type coercion before checking for equality.
+
+height = 23;
+
+// notice we are comparing a number to a string, the == operator will perform type coercion to convert '23' to 23.
+if (height == '23') {
+  console.log('The == operator converted the string to a number to do the comparison.');
+}
+
+
+
+
+
+
+
 
 
 

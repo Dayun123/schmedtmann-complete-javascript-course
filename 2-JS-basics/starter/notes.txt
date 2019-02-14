@@ -43,3 +43,14 @@ You can use the &&, ||, and ! operators to create more complex boolean logic.
 **************************** Lecture 16 ***************************************
 
 The ternery operator gives you a way to write a shorter version of an if..else statement. It can be used when you have a simple assignment to make based on some condition, or a very short if..else statement. The switch statement is another substitue for if..else, but you don't see it much.
+
+**************************** Lecture 17 ***************************************
+
+In JavaScript, some values are considered truthy or falsy when evaluated in a conditional expression.
+
+Falsy values:
+  - undefined, null, 0, '', NaN
+Truthy values:
+  - all values that are not falsy
+
+When you use the === (strict equality) operator, type coercion doesn't occur so the comparison is made using the data types given. There is another operator, the == operator, that DOES perform type coercion before checking for equality.
