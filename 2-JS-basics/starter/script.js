@@ -239,7 +239,7 @@ if (isMarkBMIHigher) {
 */
 
 /******************** Boolean Logic ******************/
-
+/*
 var firstName = 'John';
 var johnAge = 16;
 
@@ -252,6 +252,81 @@ if (johnAge < 13) {
 } else {
   console.log(firstName + ' is a man.'); 
 }
+*/
+
+/****************** Ternery Operator and Switch Statements ******************/
+
+var firstName = 'Daniel';
+var age = 33;
+
+// the ternery operator allows you to make an if...else statement inline.
+console.log(firstName + (age >= 21 ? ' drinks beer.' : ' drinks juice.' ));
+
+// can also use the ternery operator to make an assignment based on a condition
+var drink = age >= 21 ? 'beer' : 'juice';
+console.log(drink);
+
+// the switch statement allows you to test a value against multiple conditions. It's not used very oftern.
+
+var job = 'teacher';
+
+switch(job) {
+  // can match to multiple cases
+  case 'teacher':
+  case 'instructor':
+    console.log(firstName + ' teaches kids how to code.');
+    // must have a break statement or execution will fall through to the next case and just execute it without even checking if it is valid.
+    break;
+  case 'driver':
+    console.log(firstName + ' drives an Uber in New Orleans.');
+    break;
+  case 'designer':
+    console.log(firstName + ' designs ballin\' websites.');
+    break;
+  // will match if nothing else does.
+  default: 
+    console.log(firstName + ' does something else.');
+}
+
+// can translate this into a switch statement
+/*
+var firstName = 'John';
+var johnAge = 16;
+
+if (johnAge < 13) {
+  console.log(firstName + ' is a boy.');
+} else if (johnAge >= 13 && johnAge < 20) {
+  console.log(firstName + ' is a teenager.');
+} else if (johnAge >= 20 && johnAge < 30) {
+  console.log(firstName + ' is a teenager.');
+} else {
+  console.log(firstName + ' is a man.'); 
+}
+*/
+
+var firstName = 'John';
+var johnAge = 16;
+
+// this is from the previous section, it was in if..else statement then. We are going to compare each case to the 'true' boolean value.
+switch(true) {
+  case johnAge < 13:
+    console.log(firstName + ' is a boy.');
+    break;
+  case johnAge >= 13 && johnAge < 20:
+    console.log(firstName + ' is a teenager.');
+    break;
+  case johnAge >= 20 && johnAge < 30:
+    console.log(firstName + ' is a teenager.');
+    break;
+  default:
+    console.log(firstName + ' is a man.');    
+}
+
+
+
+
+
+
 
 
 
